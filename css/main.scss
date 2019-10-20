@@ -38,14 +38,17 @@ $white:rgb(151, 151, 151);
     width: 400px;
     padding: 5px;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    align-content: center;
+    
     align-self: center;
     background-color: yellowgreen;
 
     table{
         position: absolute;
         top:50%;
-        transform: translateY(-50%);
+        left: 50%;
+        transform: translate(-50%,-50%);
         border-spacing: 40px;
         border-collapse: separate;
 
