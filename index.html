@@ -19,8 +19,8 @@
     </div>
   </header>
 
-  <div class="wrapper">
-    <div class="col-6">
+  <div class="row wrapper">
+    <div class="col-sm-12 col-xs-12 col-lg-6">
       <section id="grid">
         <table>
           <tbody>
@@ -32,12 +32,13 @@
       </section>
     </div>
 
-    <div class="col-3 controls">
+    <div class="col-xs-12 col-sm-12 col-lg-3 controls">
       <h2 class="text-center">Controls</h2>
+      <p class="text-success">Click on any circle to remove point</p>
       <p>Interact with grid here.</p>
       <div class="btn-group btn-group-toggle" data-toggle="buttons">
         <label class="btn btn-secondary active">
-          <input type="radio" name="Rows number" id="numRows" autocomplete="off" checked> Rows
+          <input type="radio" name="Rows number" id="" autocomplete="off" checked> Rows: <span id="numRows"></span>
         </label>
         <label class="btn btn-warning">
           <input type="radio" name="options" id="AddRow" autocomplete="off"> +
@@ -48,7 +49,7 @@
       </div>
       <div class="btn-group btn-group-toggle mt-5" data-toggle="buttons">
         <label class="btn btn-secondary active">
-          <input type="radio" name="options" id="option1" autocomplete="off" checked> Column
+          <input type="radio" name="options" id="" autocomplete="off" checked> Column: <span id="numColumns"></span>
         </label>
         <label class="btn btn-warning">
           <input type="radio" name="options" id="AddCol" autocomplete="off"> +
@@ -57,7 +58,13 @@
           <input type="radio" name="options" id="SubCol" autocomplete="off"> -
         </label>
       </div>
+      <div class="mt-5">
+        <button id="clearAll" type="button" class="btn btn-warning btn-sm">Clear All</button>
+        <button id='fillAll' type="button" class="btn btn-success btn-sm">Fill All</button>
+      </div>
+
     </div>
+
 
   </div>
 

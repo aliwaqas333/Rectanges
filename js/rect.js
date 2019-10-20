@@ -31,7 +31,8 @@ $(document).ready(function() {
     $('table')
       .find('tr')
       .remove()
-
+    $('#numRows').html(rows)
+    $('#numColumns').html(columns)
     for (i = 0; i <= rows - 1; i++) {
       $('tbody').append('<tr id=' + i + '>')
       for (j = 0; j <= columns - 1; j++) {
@@ -93,6 +94,14 @@ $(document).ready(function() {
 
     $('#NumRectangles').html(numRectangles().length)
   }
+
+  $('#fillAll').click(function() {
+    $('td').removeClass('deletedPoint')
+  })
+
+  $('#clearAll').click(function() {
+    $('td').addClass('deletedPoint')
+  })
 
   $('#AddRow').click(function() {
     if (0 < rows < 10) {
