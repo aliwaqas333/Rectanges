@@ -78,6 +78,6 @@ $(document).ready(function() {
     }
     //return numRectangles(arr);
 
-    $("#NumRectangles").html(numRectangles(arr).length);
+    $("#NumRectangles").html(numRectangles().length);
   });
 });
