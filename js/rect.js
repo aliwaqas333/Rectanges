@@ -1,6 +1,6 @@
 $(document).ready(function() {
-  let rows = 5;
-  let columns = 5;
+  let rows = 3;
+  let columns = 3;
   let arr = new Array(columns);
   for (var x = 0; x < columns; x++) {
     arr[x] = [];
@@ -28,16 +28,15 @@ $(document).ready(function() {
       //$("tabody").append("</tr>");
     }
   }
-  function createArray(){
+  function createArray() {
     var matrix = [];
-    for(var i=0; i<9; i++) {
-    matrix[i] = [];
-    for(var j=0; j<9; j++) {
+    for (var i = 0; i < 9; i++) {
+      matrix[i] = [];
+      for (var j = 0; j < 9; j++) {
         matrix[i][j] = 1;
-        
+      }
+      console.log("matrix", matrix);
     }
-    console.log('matrix', matrix)
-}
   }
   function numRectangles(arr = [[1, 1, 1], [1, 1, 1], [1, 1, 1]]) {
     let counter = 0;
