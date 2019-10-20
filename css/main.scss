@@ -50,15 +50,16 @@ $white:rgb(151, 151, 151);
 }
 
 .wrapper {
-
+    display: flex;
+    justify-content: center;
+    height: 75vh;
 
 }
 
 #grid {
     position: relative;
-    //
     //float: right;
-    margin: 0 auto;
+    min-height: 80vh;
     height: 100%;
     //width: 400px;
     min-height: 400px;
@@ -69,15 +70,15 @@ $white:rgb(151, 151, 151);
     align-content: center;
     align-self: center;
     background-color: yellowgreen;
+    overflow: hidden;
 
     table {
         position: absolute;
         float: right;
-        
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
-        border-spacing: 40px;
+        border-spacing: 25px;
         border-collapse: separate;
 
         tbody tr td {
