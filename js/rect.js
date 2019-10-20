@@ -1,9 +1,15 @@
 $(document).ready(function() {
-  let rows = 3;
-  let columns = 3;
+  let rows = 6;
+  let columns = 6;
   let arr = initArr();
-  createGrid();
-  numRectangles();
+  main();
+  
+  function main(){
+    arr = initArr();
+    createGrid();
+    numRectangles();
+  }
+
   // const width = $('#grid').width()/columns
   // console.log('width', width)
   // const height = $(document).height()/rows
@@ -81,4 +87,31 @@ $(document).ready(function() {
 
     $("#NumRectangles").html(numRectangles().length);
   });
+
+
+  $('#AddRow').click(function(){
+    if(0<rows<10){
+      rows=rows+1;
+      main();
+    }
+  })
+  $('#SubRow').click(function(){
+    if(0<rows<10){
+      rows=rows-1;
+      main();
+    }
+  })
+  $('#AddCol').click(function(){
+    if(0<columns<10){
+      columns=columns+1;
+      main();
+    }
+  })
+  $('#SubCol').click(function(){
+    if(0<columns<10){
+      columns=columns-1;
+      main();
+    }
+  })
+
 });
