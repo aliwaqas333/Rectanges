@@ -1,6 +1,6 @@
 $(document).ready(function() {
-  let rows = 5;
-  let columns = 5;
+  let rows = 3;
+  let columns = 3;
   let arr = new Array(columns);
   for (var x = 0; x < columns; x++) {
     arr[x] = [];
@@ -10,7 +10,7 @@ $(document).ready(function() {
   }
   createGrid();
   numRectangles();
-  createArray();
+
   // const width = $('#grid').width()/columns
   // console.log('width', width)
   // const height = $(document).height()/rows
@@ -28,17 +28,7 @@ $(document).ready(function() {
       //$("tabody").append("</tr>");
     }
   }
-  function createArray(){
-    var matrix = [];
-    for(var i=0; i<9; i++) {
-    matrix[i] = [];
-    for(var j=0; j<9; j++) {
-        matrix[i][j] = 1;
-        
-    }
-    console.log('matrix', matrix)
-}
-  }
+ 
   function numRectangles(arr = [[1, 1, 1], [1, 1, 1], [1, 1, 1]]) {
     let counter = 0;
     let pairs = [];
@@ -67,7 +57,7 @@ $(document).ready(function() {
       }
     }
     console.log(rectangles);
-    console.log(rectangles.length);
+    //console.log(rectangles.length);
     return rectangles;
   }
 
@@ -84,6 +74,8 @@ $(document).ready(function() {
       points = pointId.split("_");
       arr[parseInt(points[0])][parseInt(points[1])] = 1;
     }
-    numRectangles(arr);
+    //numRectangles(arr);
+    //console.log('numRectangles', numRectangles(arr).length)
+    $('#NumRectangles').html(numRectangles(arr).length)
   });
 });
