@@ -10,7 +10,6 @@ $(document).ready(function() {
   }
   createGrid();
   numRectangles();
-  createArray();
   // const width = $('#grid').width()/columns
   // console.log('width', width)
   // const height = $(document).height()/rows
