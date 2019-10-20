@@ -10,13 +10,6 @@ $(document).ready(function() {
     numRectangles();
   }
 
-  // const width = $('#grid').width()/columns
-  // console.log('width', width)
-  // const height = $(document).height()/rows
-  // console.log('height', height)
-  // $('td').css('width',width)
-  // $('td').css('height',width)
-
   function initArr() {
     let arr = new Array(columns);
     for (var x = 0; x < columns; x++) {
