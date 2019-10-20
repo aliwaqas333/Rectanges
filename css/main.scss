@@ -77,8 +77,8 @@ $white:rgb(151, 151, 151);
         float: right;
         top: 50%;
         left: 50%;
-        transform: translate(-50%, -50%);
-        border-spacing: 25px;
+        transform: translate(-50%, -40%);
+        border-spacing: 20px;
         border-collapse: separate;
 
         tbody tr td {
@@ -96,25 +96,18 @@ $white:rgb(151, 151, 151);
     }
 }
 
-.wrapper {
- 
 
     .controls {
+        padding: 10px;
         margin-top: 10px;
         min-height: 400px;
-        padding: 10px;
         display: flex;
         flex-direction: column;
-        background-color: antiquewhite;
-        align-content: center;
         justify-content: center;
-
-        buttons{
-            width: 50px;
-            font-size: 20px;
-        }
+        background-color: antiquewhite;
+        justify-content: center;
     }
-}
+
 
 .deletedPoint {
     background-color: transparent !important;
