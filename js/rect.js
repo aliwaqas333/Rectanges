@@ -72,6 +72,6 @@ $(document).ready(function() {
       points = pointId.split("_");
       arr[parseInt(points[0])][parseInt(points[1])] = 1;
     }
-    numRectangles(arr);
+    return numRectangles(arr);
   });
 });
