@@ -60,6 +60,7 @@ $(document).ready(function() {
       }
     }
     console.log(rectangles);
+    $("#NumRectangles").html(rectangles.length);
     return rectangles;
   }
 
