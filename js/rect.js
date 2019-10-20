@@ -3,6 +3,7 @@ $(document).ready(function() {
   let columns = 5;
   createGrid();
   numRectangles();
+  createArray();
   // const width = $('#grid').width()/columns
   // console.log('width', width)
   // const height = $(document).height()/rows
@@ -20,8 +21,18 @@ $(document).ready(function() {
       //$("tabody").append("</tr>");
     }
   }
-
-  function numRectangles(arr = [[1, 1, 1], [1, 1, 1], [1, 0, 1]]) {
+  function createArray(){
+    var matrix = [];
+    for(var i=0; i<9; i++) {
+    matrix[i] = [];
+    for(var j=0; j<9; j++) {
+        matrix[i][j] = 1;
+        
+    }
+    console.log('matrix', matrix)
+}
+  }
+  function numRectangles(arr = [[1, 1, 1], [1, 1, 1], [1, 1, 1]]) {
     let counter = 0;
     let pairs = [];
     let rectangles = [];
