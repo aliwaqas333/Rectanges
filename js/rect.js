@@ -1,6 +1,5 @@
 $(document).ready(function() {
-  let rows = 3;
-  let columns = 3;
+ 
   let arr = new Array(columns);
   for (var x = 0; x < columns; x++) {
     arr[x] = [];
