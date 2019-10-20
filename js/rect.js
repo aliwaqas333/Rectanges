@@ -29,6 +29,7 @@ $(document).ready(function() {
   }
   function createGrid() {
     $("tbody").html('')
+    
     for (i = 0; i <= rows - 1; i++) {
       $("tbody").append("<tr id=" + i + ">");
       for (j = 0; j <= columns - 1; j++) {
