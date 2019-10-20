@@ -1,55 +1,63 @@
 @import url('https://fonts.googleapis.com/css?family=Zhi+Mang+Xing&display=swap');
 $dark:rgb(29, 29, 29);
 $white:rgb(151, 151, 151);
-*{
-    padding:0;
+
+* {
+    padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
-.main-header{
+
+.main-header {
     display: flex;
     justify-content: space-around;
     align-content: center;
-    height: 150px;
     background-color: $dark;
 
-    h1{
+    h1 {
         font-family: 'Zhi Mang Xing', cursive;
         margin-top: auto;
         margin-bottom: auto;
         font-size: 2.5rem;
         color: rgb(151, 151, 151);
     }
-    .logo{
+
+    .logo {
         margin-top: auto;
         margin-bottom: auto;
-    img{
-        height: 80px;
-    }
+
+        img {
+            height: 80px;
+        }
     }
 }
 
-@media only screen and (max-width: 600px){
-     .main-header{
+@media only screen and (max-width: 600px) {
+    .main-header {
         height: 100px;
 
-        h1{
+        h1 {
             font-size: 25px;
         }
-        .logo img{
+
+        .logo img {
             height: 40px;
-     }   
+        }
     }
-   
+
 
 }
 
-#grid{
+.wrapper {
+    height: 80vh;
+}
+
+#grid {
     position: relative;
     //
     //float: right;
     margin: 0 auto;
-    height: 400px;
+    height: 100%;
     //width: 400px;
     margin-top: 10px;
     padding: 5px;
@@ -59,12 +67,12 @@ $white:rgb(151, 151, 151);
     align-self: center;
     background-color: yellowgreen;
 
-    table{
+    table {
         position: absolute;
         float: right;
-        top:50%;
+        top: 50%;
         left: 50%;
-        transform: translate(-50%,-50%);
+        transform: translate(-50%, -50%);
         border-spacing: 40px;
         border-collapse: separate;
 
@@ -72,18 +80,23 @@ $white:rgb(151, 151, 151);
             width: 15px !important;
             height: 15px !important;
             border: 0.5px solid transparent;
-            margin:5px;
+            margin: 5px;
             background-color: $dark;
             border-radius: 50%;
+            //border: 1px solid rgb(0, 107, 110);
+            box-shadow: 10px 10px 15px grey;
+            cursor: pointer;
+
         }
     }
 }
-.wrapper{
+
+.wrapper {
     display: flex;
     flex-direction: row;
     justify-content: center;
 
-    .controls{
+    .controls {
         display: flex;
         flex-direction: column;
         background-color: antiquewhite;
@@ -92,12 +105,12 @@ $white:rgb(151, 151, 151);
     }
 }
 
-.deletedPoint{
-    background-color: transparent!important;
-    border: 1px solid red!important ;
+.deletedPoint {
+    background-color: transparent !important;
+    border: 1px solid red !important;
 }
 
-#NumRectangles{
+#NumRectangles {
     font-size: 35px;
     font-weight: bold;
 }
