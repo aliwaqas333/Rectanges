@@ -1,0 +1,77 @@
+@import url("https://fonts.googleapis.com/css?family=Zhi+Mang+Xing&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.main-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  height: 150px;
+  background-color: #1d1d1d;
+}
+
+.main-header h1 {
+  font-family: 'Zhi Mang Xing', cursive;
+  margin-top: auto;
+  margin-bottom: auto;
+  font-size: 2.5rem;
+  color: #979797;
+}
+
+.main-header .logo {
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.main-header .logo img {
+  height: 80px;
+}
+
+#grid {
+  position: relative;
+  margin: 0 auto;
+  height: 400px;
+  width: 400px;
+  padding: 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-item-align: center;
+      align-self: center;
+  background-color: yellowgreen;
+}
+
+#grid table {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  border-spacing: 40px;
+  border-collapse: separate;
+}
+
+#grid table tbody tr td {
+  width: 15px !important;
+  height: 15px !important;
+  border: 0.5px solid transparent;
+  margin: 5px;
+  background-color: #1d1d1d;
+  border-radius: 50%;
+}
+
+.deletedPoint {
+  background-color: transparent !important;
+  border: 1px solid red !important;
+}
+/*# sourceMappingURL=main.css.map */

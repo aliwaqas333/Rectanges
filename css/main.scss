@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css?family=Zhi+Mang+Xing&display=swap');
+$dark:rgb(29, 29, 29);
+$white:rgb(151, 151, 151);
+*{
+    padding:0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.main-header{
+    display: flex;
+    justify-content: space-around;
+    align-content: center;
+    height: 150px;
+    background-color: $dark;
+
+    h1{
+        font-family: 'Zhi Mang Xing', cursive;
+        margin-top: auto;
+        margin-bottom: auto;
+        font-size: 2.5rem;
+        color: rgb(151, 151, 151);
+    }
+    .logo{
+        margin-top: auto;
+        margin-bottom: auto;
+    img{
+        height: 80px;
+    }
+    }
+}
+
+
+
+#grid{
+    position: relative;
+    margin: 0 auto;
+    height: 400px;
+    width: 400px;
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    background-color: yellowgreen;
+
+    table{
+        position: absolute;
+        top:50%;
+        transform: translateY(-50%);
+        border-spacing: 40px;
+        border-collapse: separate;
+
+        tbody tr td {
+            width: 15px !important;
+            height: 15px !important;
+            border: 0.5px solid transparent;
+            margin:5px;
+            background-color: $dark;
+            border-radius: 50%;
+        }
+    }
+}
+
+.deletedPoint{
+    background-color: transparent!important;
+    border: 1px solid red!important ;
+}
