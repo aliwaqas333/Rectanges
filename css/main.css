@@ -51,7 +51,6 @@
   position: relative;
   margin: 0 auto;
   height: 400px;
-  width: 400px;
   margin-top: 10px;
   padding: 5px;
   display: -webkit-box;
@@ -70,6 +69,7 @@
 
 #grid table {
   position: absolute;
+  float: right;
   top: 50%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
@@ -85,6 +85,35 @@
   margin: 5px;
   background-color: #1d1d1d;
   border-radius: 50%;
+}
+
+.wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.wrapper .controls {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: antiquewhite;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .deletedPoint {

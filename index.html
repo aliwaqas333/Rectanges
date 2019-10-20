@@ -16,15 +16,51 @@
             <h1 class="text-white">Number of Rectangles in a given grid</h1>
         </div>
     </header>
-    <section id="grid">
-        <table>
-            <tbody>
-            
-            </tbody>
-        </table>
-    <button id="NumRectangles" type="button" class="btn btn-success"></button>
+   
+        <div class="wrapper">
+            <div class="col-6">
+                    <section id="grid">
+                            <table>
+                                <tbody>
+                                
+                                </tbody>
+                            </table>
+                        <button id="NumRectangles" type="button" class="btn btn-success"></button>
+                    
+                        </section>
+            </div>
 
-    </section>
+            <div class="col-3 controls">
+                <h2 class="text-center">Controls</h2>
+                <p>Interact with grid here.</p>
+                    <div class="btn-group btn-group-toggle" data-toggle="buttons">
+                            <label class="btn btn-secondary active">
+                              <input type="radio" name="Rows number" id="numRows" autocomplete="off" checked> Rows
+                            </label>
+                            <label class="btn btn-warning">
+                              <input type="radio" name="options" id="option2" autocomplete="off"> +
+                            </label>
+                            <label class="btn btn-danger">
+                              <input type="radio" name="options" id="option3" autocomplete="off"> -
+                            </label>
+                    </div>
+                    <div class="btn-group btn-group-toggle mt-5" data-toggle="buttons">
+                            <label class="btn btn-secondary active">
+                              <input type="radio" name="options" id="option1" autocomplete="off" checked> Column
+                            </label>
+                            <label class="btn btn-warning">
+                              <input type="radio" name="options" id="option2" autocomplete="off"> +
+                            </label>
+                            <label class="btn btn-danger">
+                              <input type="radio" name="options" id="option3" autocomplete="off"> -
+                            </label>
+                    </div>
+            </div>
+             
+        </div>
+   
+    
+    
 
  <script src="js/rect.js"></script>   
 </body>

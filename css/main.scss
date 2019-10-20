@@ -46,20 +46,22 @@ $white:rgb(151, 151, 151);
 
 #grid{
     position: relative;
+    //
+    //float: right;
     margin: 0 auto;
     height: 400px;
-    width: 400px;
+    //width: 400px;
     margin-top: 10px;
     padding: 5px;
     display: flex;
     flex-direction: column;
     align-content: center;
-    
     align-self: center;
     background-color: yellowgreen;
 
     table{
         position: absolute;
+        float: right;
         top:50%;
         left: 50%;
         transform: translate(-50%,-50%);
@@ -74,6 +76,19 @@ $white:rgb(151, 151, 151);
             background-color: $dark;
             border-radius: 50%;
         }
+    }
+}
+.wrapper{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+    .controls{
+        display: flex;
+        flex-direction: column;
+        background-color: antiquewhite;
+        align-content: center;
+        justify-content: center;
     }
 }
 
