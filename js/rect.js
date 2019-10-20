@@ -110,25 +110,25 @@ $(document).ready(function() {
   });
 
   $("#AddRow").click(function() {
-    if (0 < rows < 10) {
+    if (rows < 9) {
       rows = rows + 1;
       main();
     }
   });
   $("#SubRow").click(function() {
-    if (0 < rows < 10) {
+    if (rows >0) {
       rows = rows - 1;
       main();
     }
   });
   $("#AddCol").click(function() {
-    if (0 < columns < 10) {
+    if (columns<9) {
       columns = columns + 1;
       main();
     }
   });
   $("#SubCol").click(function() {
-    if (0 < columns < 10) {
+    if (columns >0) {
       columns = columns - 1;
       main();
     }

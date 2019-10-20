@@ -35,7 +35,7 @@
   height: 80px;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 768px) {
   .main-header {
     height: 100px;
   }
@@ -47,14 +47,11 @@
   }
 }
 
-.wrapper {
-  height: 80vh;
-}
-
 #grid {
   position: relative;
   margin: 0 auto;
   height: 100%;
+  min-height: 400px;
   margin-top: 10px;
   padding: 5px;
   display: -webkit-box;
@@ -94,21 +91,9 @@
   cursor: pointer;
 }
 
-.wrapper {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
 .wrapper .controls {
   margin-top: 10px;
+  min-height: 400px;
   padding: 10px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -123,6 +108,11 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+
+.wrapper .controls buttons {
+  width: 50px;
+  font-size: 20px;
 }
 
 .deletedPoint {

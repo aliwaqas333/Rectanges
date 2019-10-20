@@ -33,7 +33,7 @@ $white:rgb(151, 151, 151);
     }
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 768px) {
     .main-header {
         height: 100px;
 
@@ -50,7 +50,8 @@ $white:rgb(151, 151, 151);
 }
 
 .wrapper {
-    height: 80vh;
+
+
 }
 
 #grid {
@@ -60,6 +61,7 @@ $white:rgb(151, 151, 151);
     margin: 0 auto;
     height: 100%;
     //width: 400px;
+    min-height: 400px;
     margin-top: 10px;
     padding: 5px;
     display: flex;
@@ -71,6 +73,7 @@ $white:rgb(151, 151, 151);
     table {
         position: absolute;
         float: right;
+        
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
@@ -93,18 +96,22 @@ $white:rgb(151, 151, 151);
 }
 
 .wrapper {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
+ 
 
     .controls {
         margin-top: 10px;
+        min-height: 400px;
         padding: 10px;
         display: flex;
         flex-direction: column;
         background-color: antiquewhite;
         align-content: center;
         justify-content: center;
+
+        buttons{
+            width: 50px;
+            font-size: 20px;
+        }
     }
 }
 
