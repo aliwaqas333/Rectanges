@@ -83,10 +83,13 @@ $(document).ready(function() {
     let IsPoint = point.hasClass("deletedPoint");
     if (!IsPoint) {
       point.addClass("deletedPoint");
+      point.removeClass("filled");
+
       points = pointId.split("_");
       arr[parseInt(points[0])][parseInt(points[1])] = 0;
     } else {
       point.removeClass("deletedPoint");
+      point.addClass("filled");
       points = pointId.split("_");
       arr[parseInt(points[0])][parseInt(points[1])] = 1;
     }
@@ -97,6 +100,8 @@ $(document).ready(function() {
 
   $("#fillAll").click(function() {
     $("td").removeClass("deletedPoint");
+    $("td").addClass("filled");
+
     for (var x = 0; x < arr.length; x++)
       for (var y = 0; y < arr[0].length; y++) arr[x][y] = 1;
     numRectangles();
@@ -104,6 +109,8 @@ $(document).ready(function() {
 
   $("#clearAll").click(function() {
     $("td").addClass("deletedPoint");
+    $("td").removeClass("filled");
+
     for (var x = 0; x < arr.length; x++)
       for (var y = 0; y < arr[0].length; y++) arr[x][y] = 0;
     numRectangles();
