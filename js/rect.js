@@ -1,13 +1,7 @@
 $(document).ready(function() {
   let rows = 3;
   let columns = 3;
-  let arr = new Array(columns);
-  for (var x = 0; x < columns; x++) {
-    arr[x] = [];
-    for (var y = 0; y < rows; y++) {
-      arr[x][y] = 1;
-    }
-  }
+  let arr = initArr();
   createGrid();
   numRectangles();
   // const width = $('#grid').width()/columns
@@ -17,6 +11,16 @@ $(document).ready(function() {
   // $('td').css('width',width)
   // $('td').css('height',width)
 
+  function initArr() {
+    let arr = new Array(columns);
+    for (var x = 0; x < columns; x++) {
+      arr[x] = [];
+      for (var y = 0; y < rows; y++) {
+        arr[x][y] = 1;
+      }
+    }
+    return arr;
+  }
   function createGrid() {
     for (i = 0; i <= rows - 1; i++) {
       $("tbody").append("<tr id=" + i + ">");
@@ -28,7 +32,7 @@ $(document).ready(function() {
     }
   }
 
-  function numRectangles(arr = [[1, 1, 1], [1, 1, 1], [1, 1, 1]]) {
+  function numRectangles() {
     let counter = 0;
     let pairs = [];
     let rectangles = [];
@@ -72,6 +76,7 @@ $(document).ready(function() {
       points = pointId.split("_");
       arr[parseInt(points[0])][parseInt(points[1])] = 1;
     }
-    return numRectangles(arr);
+    //numRectangles(arr);
+    $("NumRectangle").html(numRectangles().length);
   });
 });
