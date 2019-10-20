@@ -1,6 +1,13 @@
 $(document).ready(function() {
   let rows = 5;
   let columns = 5;
+  let arr = new Array(columns);
+  for (var x = 0; x < columns; x++) {
+    arr[x] = [];
+    for (var y = 0; y < rows; y++) {
+      arr[x][y] = 1;
+    }
+  }
   createGrid();
   numRectangles();
   // const width = $('#grid').width()/columns
@@ -57,11 +64,15 @@ $(document).ready(function() {
     let pointId = event.target.id;
     let point = $("#" + pointId);
     let IsPoint = point.hasClass("deletedPoint");
-
     if (!IsPoint) {
       point.addClass("deletedPoint");
+      points = pointId.split("_");
+      arr[parseInt(points[0])][parseInt(points[1])] = 0;
     } else {
       point.removeClass("deletedPoint");
+      points = pointId.split("_");
+      arr[parseInt(points[0])][parseInt(points[1])] = 1;
     }
+    numRectangles(arr);
   });
 });
