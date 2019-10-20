@@ -52,6 +52,7 @@
   margin: 0 auto;
   height: 400px;
   width: 400px;
+  margin-top: 10px;
   padding: 5px;
   display: -webkit-box;
   display: -ms-flexbox;
