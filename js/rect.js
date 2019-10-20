@@ -98,18 +98,14 @@ $(document).ready(function() {
   $("#fillAll").click(function() {
     $("td").removeClass("deletedPoint");
     for (var x = 0; x < arr.length; x++)
-      for (var y = 0; y < arr[0].length; y++) {
-        arr[x][y] = 1;
-      }
+      for (var y = 0; y < arr[0].length; y++) arr[x][y] = 1;
     numRectangles();
   });
 
   $("#clearAll").click(function() {
     $("td").addClass("deletedPoint");
     for (var x = 0; x < arr.length; x++)
-      for (var y = 0; y < arr[0].length; y++) {
-        arr[x][y] = 0;
-      }
+      for (var y = 0; y < arr[0].length; y++) arr[x][y] = 0;
     numRectangles();
   });
 
