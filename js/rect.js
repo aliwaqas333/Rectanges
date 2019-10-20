@@ -66,7 +66,6 @@ $(document).ready(function() {
       }
     }
     console.log(rectangles);
-    console.log(rectangles.length);
     return rectangles;
   }
 
