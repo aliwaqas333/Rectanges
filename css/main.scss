@@ -29,7 +29,20 @@ $white:rgb(151, 151, 151);
     }
 }
 
+@media only screen and (max-width: 600px){
+     .main-header{
+        height: 100px;
 
+        h1{
+            font-size: 25px;
+        }
+        .logo img{
+            height: 40px;
+     }   
+    }
+   
+
+}
 
 #grid{
     position: relative;

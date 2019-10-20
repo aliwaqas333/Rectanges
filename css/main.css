@@ -35,6 +35,18 @@
   height: 80px;
 }
 
+@media only screen and (max-width: 600px) {
+  .main-header {
+    height: 100px;
+  }
+  .main-header h1 {
+    font-size: 25px;
+  }
+  .main-header .logo img {
+    height: 40px;
+  }
+}
+
 #grid {
   position: relative;
   margin: 0 auto;
