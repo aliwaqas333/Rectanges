@@ -28,16 +28,7 @@ $(document).ready(function() {
       //$("tabody").append("</tr>");
     }
   }
-  function createArray() {
-    var matrix = [];
-    for (var i = 0; i < 9; i++) {
-      matrix[i] = [];
-      for (var j = 0; j < 9; j++) {
-        matrix[i][j] = 1;
-      }
-      console.log("matrix", matrix);
-    }
-  }
+
   function numRectangles(arr = [[1, 1, 1], [1, 1, 1], [1, 1, 1]]) {
     let counter = 0;
     let pairs = [];
