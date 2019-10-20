@@ -1,6 +1,6 @@
 $(document).ready(function() {
-  let rows = 6;
-  let columns = 6;
+  let rows = 3;
+  let columns = 3;
   let arr = initArr();
   main();
   
@@ -28,6 +28,7 @@ $(document).ready(function() {
     return arr;
   }
   function createGrid() {
+    $("tbody").html('')
     for (i = 0; i <= rows - 1; i++) {
       $("tbody").append("<tr id=" + i + ">");
       for (j = 0; j <= columns - 1; j++) {
