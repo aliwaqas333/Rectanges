@@ -20,23 +20,23 @@
   </header>
 
   <div class="row wrapper">
-    <div class="col-sm-12 col-xs-12 col-lg-6">
+    <div class="col-sm-12 col-xs-12 col-lg-6 col-md-8">
       <section id="grid">
         <table>
           <tbody>
 
           </tbody>
         </table>
-        <button id="NumRectangles" type="button" class="btn btn-success"></button>
+        <div id="result">Rectangles Possible: </span>  <span id="NumRectangles"></span></div>
 
       </section>
     </div>
 
-    <div class="col-xs-12 col-sm-12 col-lg-3 controls">
+    <div class="col-xs-12 col-sm-12 col-lg-3 col-md-4 p-5 controls">
       <h2 class="text-center">Controls</h2>
       <p class="text-success">Click on any circle to remove point</p>
       <p>Interact with grid here.</p>
-      <div class="btn-group btn-group-toggle" data-toggle="buttons">
+      <div style="width:180px" class="btn-group btn-group-toggle" data-toggle="buttons">
         <label class="btn btn-secondary active">
           <input type="radio" name="Rows number" id="" autocomplete="off" checked> Rows: <span id="numRows"></span>
         </label>
@@ -47,7 +47,7 @@
           <input type="radio" name="options" id="SubRow" autocomplete="off"> -
         </label>
       </div>
-      <div class="btn-group btn-group-toggle mt-5" data-toggle="buttons">
+      <div style="width:180px" class="btn-group btn-group-toggle mt-5" data-toggle="buttons">
         <label class="btn btn-secondary active">
           <input type="radio" name="options" id="" autocomplete="off" checked> Column: <span id="numColumns"></span>
         </label>
