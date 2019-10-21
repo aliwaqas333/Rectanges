@@ -18,10 +18,10 @@ $(document).ready(function() {
   // $('td').css('height',width)
 
   function initArr() {
-    let arr = new Array(columns);
-    for (var x = 0; x < columns; x++) {
+    let arr = new Array(rows);
+    for (var x = 0; x < rows; x++) {
       arr[x] = [];
-      for (var y = 0; y < rows; y++) {
+      for (var y = 0; y < columns; y++) {
         arr[x][y] = 1;
       }
     }
@@ -91,7 +91,7 @@ $(document).ready(function() {
       arr[parseInt(points[0])][parseInt(points[1])] = 1;
     }
     //return numRectangles(arr);
-
+    console.table(arr);
     $("#NumRectangles").html(numRectangles().length);
   }
 
