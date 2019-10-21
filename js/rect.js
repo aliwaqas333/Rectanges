@@ -94,7 +94,6 @@ $(document).ready(function() {
       arr[parseInt(points[0])][parseInt(points[1])] = 1;
     }
     //return numRectangles(arr);
-    console.table(arr);
     $("#NumRectangles").html(numRectangles().length);
   }
 
@@ -123,19 +122,19 @@ $(document).ready(function() {
     }
   });
   $("#SubRow").click(function() {
-    if (rows >0) {
+    if (rows > 0) {
       rows = rows - 1;
       main();
     }
   });
   $("#AddCol").click(function() {
-    if (columns<9) {
+    if (columns < 9) {
       columns = columns + 1;
       main();
     }
   });
   $("#SubCol").click(function() {
-    if (columns >0) {
+    if (columns > 0) {
       columns = columns - 1;
       main();
     }
